@@ -1,12 +1,10 @@
 ﻿
-
 while (true)
 {
     Console.Clear();
     Console.WriteLine("==      Ищем второй наибольший элемент массива      == ");
     Console.Write("Введите число элементов  предполагаемого массива: ");
     int count;
-   
     try
     {
         if (!int.TryParse(Console.ReadLine(), out count)) // на случай если вводят не число
@@ -25,7 +23,7 @@ while (true)
         }
         //int count = Convert.ToInt32(Console.ReadLine()); // тут может быть ex 
         int[] user_array = new int[count] ;
-        for (int i=0; i< user_array.Length; i++)
+        for (int i=0; i<= user_array.Length; i++)
         {
             Console.Clear();
             Console.WriteLine("==      Ищем второй наибольший элемент массива      == ");
@@ -33,8 +31,17 @@ while (true)
             foreach (int item in user_array)
                 Console.Write($"{item} ");
             Console.WriteLine("\n");
+            if (i == user_array.Length) break; // пока что оставлю костыль тут,(для полногоотображения введенного массива )
             Console.Write("Вводите элементы массива целыми числами, по одному: ");
-            user_array[i] = Convert.ToInt32(Console.ReadLine()); //   тут может быть ex 
+           // user_array[i] = Convert.ToInt32(Console.ReadLine()); //   тут может быть ex 
+            if (!int.TryParse(Console.ReadLine(), out user_array[i]))  // на случай  если пытаются добавлять  не цифры
+            {
+                i--;
+                Console.WriteLine("не удалось преобразовать ввод в цифру");
+                Console.WriteLine("Нажмите любую клавишу повторить ввод текущего элемента");
+                Console.ReadKey();
+                continue;
+            }  
         }    
         int result = SearchInArr(user_array); 
         Console.WriteLine($"Второй по наибольший элемент массива = {result}");
@@ -52,7 +59,7 @@ while (true)
     }
 }
 
-static int SearchInArr(int[] array)
+static int SearchInArr(int[] array)   // сам метод поиска  в массиве
 {
     int maxVal = array[0];
     int secondMaxVal = array[0];
