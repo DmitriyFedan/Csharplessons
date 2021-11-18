@@ -9,6 +9,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithArrayHome", "WorkWi
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithClassVector", "WorkWithClassVector\WorkWithClassVector.csproj", "{74EC78CE-9FC9-4824-B8E8-3A8ED70F2F35}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLTEST", "MLTEST\MLTEST.csproj", "{7485F6AC-5250-4BAC-B859-4505F4A576E0}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -27,6 +29,10 @@ Global
 		{74EC78CE-9FC9-4824-B8E8-3A8ED70F2F35}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{74EC78CE-9FC9-4824-B8E8-3A8ED70F2F35}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{74EC78CE-9FC9-4824-B8E8-3A8ED70F2F35}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7485F6AC-5250-4BAC-B859-4505F4A576E0}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7485F6AC-5250-4BAC-B859-4505F4A576E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7485F6AC-5250-4BAC-B859-4505F4A576E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7485F6AC-5250-4BAC-B859-4505F4A576E0}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
