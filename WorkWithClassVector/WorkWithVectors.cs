@@ -7,6 +7,10 @@ Vector vect_2 = new Vector(8, 13, 21);
 
 //Vector vect_1 = new Vector(-5, 3, -8);
 //Vector vect_2 = new Vector(8, -13, 21);
+
+//Vector vect_1 = new Vector(0, 3, 0);
+//Vector vect_2 = new Vector(8, 0, 21);
+
 // смотрим информацию строковом формате о конкретном векторе
 Console.WriteLine(Vector.StringInfo(vect_1)); 
 Console.WriteLine(Vector.StringInfo(vect_2));
