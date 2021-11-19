@@ -8,11 +8,11 @@ namespace WorkWithClassVector
 {
     internal class Vector
     {
-        private int x;
-        private int y;
-        private int z;
+        private double x;
+        private double y;
+        private double z;
 
-        public Vector(int x, int y, int z)
+        public Vector(double x, double y, double z)
         {
             this.x = x;
             this.y = y;
@@ -29,22 +29,22 @@ namespace WorkWithClassVector
             double lenth = Math.Sqrt(v1.x * v1.x +
                                      v1.y * v1.y +
                                      v1.z * v1.z);
-            return lenth;
+            return Math.Round(lenth, 2);
         }
 
-        public static int ScalarProduct(Vector v1, Vector v2)
+        public static double ScalarProduct(Vector v1, Vector v2)
         {
 
-            int scalar = (v1.x * v2.x +
+            double scalar = (v1.x * v2.x +
                           v1.y * v2.y +
                           v1.z * v2.z);
-            return scalar;
+            return Math.Round(scalar, 2);
         }
         public static Vector VectorProduct(Vector v1, Vector v2)
         {
-            int res_x = v1.y * v2.z - v1.z * v2.y;
-            int res_y = v1.z * v2.x - v1.x * v2.z;
-            int res_z = v1.x * v2.y - v1.y * v2.x;
+            double res_x = v1.y * v2.z - v1.z * v2.y;
+            double res_y = v1.z * v2.x - v1.x * v2.z;
+            double res_z = v1.x * v2.y - v1.y * v2.x;
             Vector resvect = new Vector(res_x, res_y, res_z);
             return resvect;
         }
@@ -54,7 +54,7 @@ namespace WorkWithClassVector
             double angle = (ScalarProduct(v1, v2) /
                             (Math.Abs(Vector.VectorLength(v1)) *
                             (Math.Abs(Vector.VectorLength(v2)))));
-            return angle;
+            return Math.Round(angle, 2);
         }
 
         public static Vector SumVectors(Vector v1, Vector v2)
@@ -66,6 +66,11 @@ namespace WorkWithClassVector
         {
             Vector diffvector = new Vector(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
             return diffvector;
+        }
+        public static string StringInfo(Vector vector)
+        {
+            string info = ($"Координаты вектора ({vector.x},{vector.y},{vector.z})");
+            return info;
         }
     }
 
