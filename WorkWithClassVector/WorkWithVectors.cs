@@ -55,4 +55,3 @@ Console.WriteLine($"Тип данных значения полученного 
 Console.WriteLine(Vector.StringInfo(vect_5)); // смотрим его координаты
 
 
-

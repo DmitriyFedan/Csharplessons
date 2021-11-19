@@ -8,9 +8,9 @@ namespace WorkWithClassVector
 {
     internal class Vector
     {
-        private double x;
-        private double y;
-        private double z;
+        public readonly double x;
+        public readonly double y;
+        public readonly double z;
 
         public Vector(double x, double y, double z)
         {
@@ -32,6 +32,12 @@ namespace WorkWithClassVector
             return Math.Round(lenth, 2);
         }
 
+        /// <summary>
+        /// считает скалярное произведение двух переданных векторов
+        /// </summary>
+        /// <param name="v1"></param>
+        /// <param name="v2"></param>
+        /// <returns></returns>
         public static double ScalarProduct(Vector v1, Vector v2)
         {
 
@@ -40,6 +46,13 @@ namespace WorkWithClassVector
                           v1.z * v2.z);
             return Math.Round(scalar, 2);
         }
+        
+        /// <summary>
+        /// возвращает результирующий вектор - результат  векторного произведения двух переданных векторов
+        /// </summary>
+        /// <param name="v1"></param>
+        /// <param name="v2"></param>
+        /// <returns></returns>
         public static Vector VectorProduct(Vector v1, Vector v2)
         {
             double res_x = v1.y * v2.z - v1.z * v2.y;
@@ -49,6 +62,12 @@ namespace WorkWithClassVector
             return resvect;
         }
 
+        /// <summary>
+        /// возвращает  косинус угла между двумя переданными векторами
+        /// </summary>
+        /// <param name="v1"></param>
+        /// <param name="v2"></param>
+        /// <returns></returns>
         public static double AngleAmongVectors(Vector v1, Vector v2)
         {
             double angle = (ScalarProduct(v1, v2) /
@@ -57,16 +76,35 @@ namespace WorkWithClassVector
             return Math.Round(angle, 2);
         }
 
+        /// <summary>
+        /// возвращает  вектор  полученный в резльтате суммы переданных векторов 
+        /// </summary>
+        /// <param name="v1"></param>
+        /// <param name="v2"></param>
+        /// <returns></returns>
         public static Vector SumVectors(Vector v1, Vector v2)
         {
             Vector sumvector = new Vector(v1.x + v2.x, v1.y + v2.y, v1.z + v2.z);
             return sumvector;
         }
+
+        /// <summary>
+        /// возвращает  вектор  полученный в резльтате разности переданных векторов 
+        /// </summary>
+        /// <param name="v1"></param>
+        /// <param name="v2"></param>
+        /// <returns></returns>
         public static Vector DiffVectors(Vector v1, Vector v2)
         {
             Vector diffvector = new Vector(v1.x - v2.x, v1.y - v2.y, v1.z - v2.z);
             return diffvector;
         }
+
+        /// <summary>
+        /// строковое представление координат вектора в формате Координаты вектора (x,y,z)
+        /// </summary>
+        /// <param name="vector"></param>
+        /// <returns></returns>
         public static string StringInfo(Vector vector)
         {
             string info = ($"Координаты вектора ({vector.x},{vector.y},{vector.z})");
