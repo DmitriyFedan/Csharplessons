@@ -1,20 +1,16 @@
 ﻿
 using PolygonPerimetr;
 
-List <int> lst = new List<int>() { 1, 2, 3};
-int [] arr = new int [] { 1, 2, 3 };
+// произвольный Прямоуголник 
+Point p1 = new Point("A", 0, 0);
+Point p2 = new Point("B", 0, 0);
+Point p3 = new Point("C", 4, 3);
+Point p4 = new Point("D", 4, 1);
 
+Polygon rect1 = new Polygon(p1, p2, p3, p4);
 
-/*
-for (int i = 0; i < lst.Count; i++)
-{ 
-    int res = lst[i] - lst[i-1];
-    Console.WriteLine(res);
+rect1.PolygonInfo();
 
-}
-*/
-for (int i = 0; i < arr.Length; i++)
-{
-    int res = lst[i-1];
-    Console.WriteLine(res);
-}
+double per = rect1.Perimetr();
+
+Console.WriteLine(per);
