@@ -13,6 +13,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLTEST", "MLTEST\MLTEST.csp
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolygonPerimetr", "polygon\PolygonPerimetr.csproj", "{3841A951-850C-47C4-87B4-52FE6316B839}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWith3dFigurs", "WorkWith3dFigurs\WorkWith3dFigurs.csproj", "{DA18300B-A6E7-433F-AB69-729700E7BAD6}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -39,6 +41,10 @@ Global
 		{3841A951-850C-47C4-87B4-52FE6316B839}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{3841A951-850C-47C4-87B4-52FE6316B839}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{3841A951-850C-47C4-87B4-52FE6316B839}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DA18300B-A6E7-433F-AB69-729700E7BAD6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DA18300B-A6E7-433F-AB69-729700E7BAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DA18300B-A6E7-433F-AB69-729700E7BAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DA18300B-A6E7-433F-AB69-729700E7BAD6}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

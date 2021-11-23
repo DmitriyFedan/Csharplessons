@@ -39,7 +39,9 @@ namespace PolygonPerimetr
                 result += SideLenght(polygonPoints[i-1], polygonPoints[i]);
                 
                 /*if (length <= 0)
-                    errorvalue += 1;   (нужно добавить обработку если все  точки на одной прямой)*/
+                    errorvalue += 1;   (нужно добавить обработку если все  точки на одной прямой)
+                 проверить углы межды сторонами если угол 180 между всеми сторонами*/
+
             }
             // нужно  найти длинну последней стороны (м-у первой и последней точкой)
             result += SideLenght(polygonPoints[polygonPoints.Count - 1], polygonPoints[0]);
