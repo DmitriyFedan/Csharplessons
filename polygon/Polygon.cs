@@ -17,25 +17,29 @@ namespace PolygonPerimetr
         public Polygon(Point p1, Point p2, Point p3)
         {
             polygonPoints.AddRange(new Point[] { p1, p2, p3 });
-            PolygonName = $"{p1.Name}{p2.Name},{p3.Name}";
+            PolygonName = $"треугольник {p1.Name}{p2.Name}{p3.Name}";
         }
         public Polygon(Point p1, Point p2, Point p3, Point p4)
         {
             polygonPoints.AddRange(new Point[] { p1, p2, p3, p4 });
-            PolygonName = $"{p1.Name}{p2.Name}{p3.Name}{p4.Name}";
+            PolygonName = $"четырехугольник {p1.Name}{p2.Name}{p3.Name}{p4.Name}";
         }
         public Polygon(Point p1, Point p2, Point p3, Point p4, Point p5)
         {
             polygonPoints.AddRange(new Point[] { p1, p2, p3, p4, p5});
-            PolygonName = $"{p1.Name}{p2.Name}{p3.Name}{p4.Name},{p5.Name}";
+            PolygonName = $"пятиугольник {p1.Name}{p2.Name}{p3.Name}{p4.Name}{p5.Name}";
         }
 
         public double Perimetr()
         {
+            //int errorvalue = 0;
             double result = 0;
             for (int i = 1; i < polygonPoints.Count ; i++)
             {
                 result += SideLenght(polygonPoints[i-1], polygonPoints[i]);
+                
+                /*if (length <= 0)
+                    errorvalue += 1;   (нужно добавить обработку если все  точки на одной прямой)*/
             }
             // нужно  найти длинну последней стороны (м-у первой и последней точкой)
             result += SideLenght(polygonPoints[polygonPoints.Count - 1], polygonPoints[0]);
@@ -51,7 +55,7 @@ namespace PolygonPerimetr
         }
         public void PolygonInfo()
         {
-            Console.WriteLine($"Периметр рямоугольника {PolygonName} равен {Perimetr()}");
+            Console.WriteLine($"{PolygonName} периметр равен {Perimetr()}");
         }
     }
 }
