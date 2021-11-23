@@ -3,13 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 17
 VisualStudioVersion = 17.0.31903.59
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MyConsCalc", "MyConsCalc\MyConsCalc.csproj", "{305FAEF9-9A53-407E-9180-604E49515EAF}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MyConsCalc", "MyConsCalc\MyConsCalc.csproj", "{305FAEF9-9A53-407E-9180-604E49515EAF}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithArrayHome", "WorkWithArrayHome\WorkWithArrayHome.csproj", "{434749EF-6F67-4B6B-AD30-961C914D45BC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWithArrayHome", "WorkWithArrayHome\WorkWithArrayHome.csproj", "{434749EF-6F67-4B6B-AD30-961C914D45BC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWithClassVector", "WorkWithClassVector\WorkWithClassVector.csproj", "{74EC78CE-9FC9-4824-B8E8-3A8ED70F2F35}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWithClassVector", "WorkWithClassVector\WorkWithClassVector.csproj", "{74EC78CE-9FC9-4824-B8E8-3A8ED70F2F35}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MLTEST", "MLTEST\MLTEST.csproj", "{7485F6AC-5250-4BAC-B859-4505F4A576E0}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "MLTEST", "MLTEST\MLTEST.csproj", "{7485F6AC-5250-4BAC-B859-4505F4A576E0}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolygonPerimetr", "polygon\PolygonPerimetr.csproj", "{3841A951-850C-47C4-87B4-52FE6316B839}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -33,6 +35,10 @@ Global
 		{7485F6AC-5250-4BAC-B859-4505F4A576E0}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7485F6AC-5250-4BAC-B859-4505F4A576E0}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7485F6AC-5250-4BAC-B859-4505F4A576E0}.Release|Any CPU.Build.0 = Release|Any CPU
+		{3841A951-850C-47C4-87B4-52FE6316B839}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{3841A951-850C-47C4-87B4-52FE6316B839}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{3841A951-850C-47C4-87B4-52FE6316B839}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{3841A951-850C-47C4-87B4-52FE6316B839}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
