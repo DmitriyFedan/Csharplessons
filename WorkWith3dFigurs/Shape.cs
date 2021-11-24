@@ -58,6 +58,8 @@ namespace WorkWith3dFigures
     }
 
 
+
+
     internal class Cylinder : Shape
     {
         public double H {get;}
@@ -96,6 +98,8 @@ namespace WorkWith3dFigures
     }
 
 
+
+
     internal class Ball : Shape
     {
         public double R { get; }
@@ -110,3 +114,12 @@ namespace WorkWith3dFigures
         }
     }
 }
+
+
+/// попробовать  реализовать иерархию наследования 
+///       box : shape       //  piramida : box
+///       ball: shape       // cylinder : ball 
+///  
+///    иил cylynder: piramida
+///    посотреть как при этом себя ведет   абстрактный метод Volume 
+///  

@@ -26,6 +26,8 @@ try
                       $"Объем Пирамиды {pyr1_vol} \n" +
                       $"Объем Сферы {ball1_vol}");
 
+
+    // наполняем коробку разными фигурами и смотрим что содержится
     if (box1.Add(cyl1)) Console.WriteLine(box1.PrintInfo());
     else Console.WriteLine($"Не удалось добавить фигуру {box1.PrintInfo()}");
     
@@ -43,7 +45,7 @@ try
    
     if (box1.Add(ball1)) Console.WriteLine(box1.PrintInfo());
     else Console.WriteLine($"Не удалось добавить фигуру {box1.PrintInfo()}");
-
+    //  тут уже не хватит места для следующей 
     if (box1.Add(ball1)) Console.WriteLine(box1.PrintInfo());
     else Console.WriteLine($"Не удалось добавить фигуру {box1.PrintInfo()}");
     box1.PrintInfo();
