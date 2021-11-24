@@ -13,17 +13,39 @@ namespace WorkWith3dFigurs
     }
 
     internal class Box : Shape
-    { 
+    {
         public double H { get; }
+        public double ResidualCapacity { get; private set; }
+        private List<Shape> InBox = new List<Shape>();   // список содержащихся деталей
 
         public Box(int height)
         {
             H = height;
+            ResidualCapacity = Volume(); // посчитаем свободный объем при  создании экземпляра класса
         }
         public override double Volume()
         {
             double volume = Math.Pow(H, 3);
             return volume;
+        }
+
+        public bool Add(Shape shape)
+        {
+            if (ResidualCapacity >= shape.Volume())
+            {
+                ResidualCapacity -= shape.Volume();
+                InBox.Add(shape);
+                return true;
+            }
+            else
+                //return PrintInfo();
+                return false;
+        }
+        public string PrintInfo()
+        {
+            string listfigures = String.Join(" ", InBox.ToString());   /// проверить работает ли это  
+            string info = $"В боксе {listfigures},  свободный объем {ResidualCapacity}";
+            return info;
         }
     }
 
