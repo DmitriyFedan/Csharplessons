@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace WorkWith3dFigurs
+namespace WorkWith3dFigures
 {
     internal abstract class Shape
     {
@@ -26,7 +26,7 @@ namespace WorkWith3dFigurs
         public override double Volume()
         {
             double volume = Math.Pow(H, 3);
-            return volume;
+            return Math.Round(volume, 2);
         }
 
         public bool Add(Shape shape)
@@ -38,13 +38,21 @@ namespace WorkWith3dFigurs
                 return true;
             }
             else
-                //return PrintInfo();
+                
                 return false;
         }
         public string PrintInfo()
         {
-            string listfigures = String.Join(" ", InBox.ToString());   /// проверить работает ли это  
-            string info = $"В боксе {listfigures},  свободный объем {ResidualCapacity}";
+            // string listfigures = String.Join(" ", InBox.ToString());   /// проверить работает ли это( не работает)
+            string? listfigures = null;
+            foreach (Shape shape in InBox)
+            {
+                //listfigures = String.Concat(listfigures,(Convert.ToString(GetType().Name)));/ не  так работает 
+                listfigures = $"{listfigures} {(Convert.ToString(shape.GetType().Name))}";  // вроде рабоатет
+            }
+
+
+            string info = $"В боксе: {listfigures}. Cвободный объем {Math.Round(ResidualCapacity, 2)}";
             return info;
         }
     }
@@ -65,7 +73,7 @@ namespace WorkWith3dFigurs
         {
             //double volume = Pi * (Math.Pow(R, 2)) * H;    // не понял зачем дано две формулы()
             double volume = SBase * H;
-            return volume;
+            return Math.Round(volume, 2);
         }
     }
 
@@ -83,7 +91,7 @@ namespace WorkWith3dFigurs
         public override double Volume()
         {
             double volume = (SBase * H) / 3;
-            return volume;
+            return Math.Round(volume, 2);
         }
     }
 
@@ -98,7 +106,7 @@ namespace WorkWith3dFigurs
         public override double Volume()
         {
             double volume = 4 / 3 * Pi * Math.Pow(R, 3);
-            return volume; 
+            return Math.Round(volume, 2);
         }
     }
 }
