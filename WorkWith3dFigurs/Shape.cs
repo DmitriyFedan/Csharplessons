@@ -26,10 +26,12 @@ namespace WorkWith3dFigurs
             return volume;
         }
     }
+
+
     internal class Cylinder : Shape
     {
-        public double H { get; init; }
-        public double R { get; init; }
+        public double H {get;}
+        public double R {get;}
         public double SBase { get; }
         public Cylinder( int height, int baseRadius)
         { 
@@ -45,6 +47,36 @@ namespace WorkWith3dFigurs
         }
     }
 
-    internal class Circle : Shape
-    { }
+
+    internal class Pyramid : Shape
+    {
+        public double SBase { get; init; }
+        public double H { get; init; }
+        public Pyramid(double height, double SBase)
+        {
+            H = height;
+            this.SBase = SBase;
+        }
+
+        public override double Volume()
+        {
+            double volume = (SBase * H) / 3;
+            return volume;
+        }
+    }
+
+
+    internal class Ball : Shape
+    {
+        public double R { get; }
+        public Ball(double radius)
+        {
+            R = radius;
+        }
+        public override double Volume()
+        {
+            double volume = 4 / 3 * Pi * Math.Pow(R, 3);
+            return volume; 
+        }
+    }
 }
