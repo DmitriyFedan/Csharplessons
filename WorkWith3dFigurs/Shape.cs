@@ -11,7 +11,8 @@ namespace WorkWith3dFigures
         public abstract double Volume();
         protected const double Pi = 3.1415;
     }
-
+    
+    // Нужно ли выносить каждый Класс в отдельный файл типа класс ??  
     internal class Box : Shape
     {
         public double H { get; }
