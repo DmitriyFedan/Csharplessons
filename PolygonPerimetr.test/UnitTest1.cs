@@ -6,7 +6,7 @@ namespace PolygonPerimetr.test
     public class PolygonTest
     {
 
-        // test points 
+        // test points  
         Point p1 = new Point("A", 1, 1);
         Point p2 = new Point("B", 2, 3);
         Point p3 = new Point("C", 5, 8);
@@ -48,7 +48,7 @@ namespace PolygonPerimetr.test
         }
   */
         [Fact]
-        public void LengthSidetest()
+        public void LengthSidetest() // теситруем вычисление длинны стороны треугольника
         {
             Polygon triangle2 = new Polygon(p1, p2, p3);
             double length = triangle2.SideLenght(p1, p2);
