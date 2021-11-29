@@ -6,7 +6,7 @@
         public double ResidualCapacity { get; private set; }
         private List<Shape> InBox = new List<Shape>();   // список содержащихся деталей
 
-        public Box(int height)
+        public Box(double  height)
         {
             H = height;
             ResidualCapacity = Volume(); // посчитаем свободный объем при  создании экземпляра класса

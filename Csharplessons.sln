@@ -15,9 +15,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolygonPerimetr", "polygon\
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWith3dFigures", "WorkWith3dFigurs\WorkWith3dFigures.csproj", "{DA18300B-A6E7-433F-AB69-729700E7BAD6}"
 EndProject
-Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "TEST CODE", "TEST CODE\TEST CODE.csproj", "{EA8EFB11-8A11-41E5-A466-61435B2E8A87}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWith3dFigure.test", "WorkWith3dFigure.test\WorkWith3dFigure.test.csproj", "{8E917769-F376-4259-9470-7603A1D1FC80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WorkWith3dFigure.test", "WorkWith3dFigure.test\WorkWith3dFigure.test.csproj", "{8E917769-F376-4259-9470-7603A1D1FC80}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolygonPerimetr.test", "PolygonPerimetr.test\PolygonPerimetr.test.csproj", "{FC5E807D-5333-40B4-9744-64FF064BCEAA}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -49,14 +49,14 @@ Global
 		{DA18300B-A6E7-433F-AB69-729700E7BAD6}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{DA18300B-A6E7-433F-AB69-729700E7BAD6}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{DA18300B-A6E7-433F-AB69-729700E7BAD6}.Release|Any CPU.Build.0 = Release|Any CPU
-		{EA8EFB11-8A11-41E5-A466-61435B2E8A87}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{EA8EFB11-8A11-41E5-A466-61435B2E8A87}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{EA8EFB11-8A11-41E5-A466-61435B2E8A87}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{EA8EFB11-8A11-41E5-A466-61435B2E8A87}.Release|Any CPU.Build.0 = Release|Any CPU
 		{8E917769-F376-4259-9470-7603A1D1FC80}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{8E917769-F376-4259-9470-7603A1D1FC80}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8E917769-F376-4259-9470-7603A1D1FC80}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8E917769-F376-4259-9470-7603A1D1FC80}.Release|Any CPU.Build.0 = Release|Any CPU
+		{FC5E807D-5333-40B4-9744-64FF064BCEAA}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{FC5E807D-5333-40B4-9744-64FF064BCEAA}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{FC5E807D-5333-40B4-9744-64FF064BCEAA}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{FC5E807D-5333-40B4-9744-64FF064BCEAA}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

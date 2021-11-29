@@ -1,5 +1,6 @@
 ﻿using WorkWith3dFigures;
 
+
 try
 {
     Console.WriteLine("ТЕСТ");
@@ -11,13 +12,13 @@ try
     double box2_vol = box2.Volume();
 
 
-    Cylinder cyl1 = new Cylinder(5, 2);
+    Cylinder cyl1 = new Cylinder(5, 2.5);
     double cyl1_vol = cyl1.Volume();
 
-    Pyramid pyr1 = new Pyramid(10, 7);
+    Pyramid pyr1 = new Pyramid(13, 21);
     double pyr1_vol = pyr1.Volume();
 
-    Ball ball1 = new Ball(4);
+    Ball ball1 = new Ball(5);
     double ball1_vol = ball1.Volume();
 
     Console.WriteLine($"Объем Куба {box1_vol} \n" +

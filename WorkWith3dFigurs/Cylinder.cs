@@ -4,12 +4,18 @@
     {
         public double H {get;}
         public double R {get;}
-        public double SBase { get; }
-        public Cylinder( int height, int baseRadius)
+        public double SBase
+        {
+            get
+            {
+                return Pi * Math.Pow(R, 2);
+            }
+        }
+        public Cylinder( double height, double baseRadius)
         { 
             R = baseRadius;
             H = height;
-            SBase = Pi * Math.Pow(baseRadius, 2);
+            
         }
         public override double Volume()
         {
