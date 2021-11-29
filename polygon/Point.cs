@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace PolygonPerimetr
 {
-    internal class Point
+    public class Point
     {
         public string Name { get; }
         public  int X { get; }

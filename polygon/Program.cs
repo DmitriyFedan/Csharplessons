@@ -3,6 +3,7 @@ using PolygonPerimetr;
 
 try
 {
+    
     // произвольный четырехугольник 
     Point p1 = new Point("A", 0, 0);
     Point p2 = new Point("B", 0, 0);
@@ -46,6 +47,10 @@ try
     Polygon pentagon = new Polygon(p1_4, p2_4, p3_4, p4_4, p5_4);
     pentagon.PolygonInfo();
     Console.WriteLine(pentagon.Perimetr());
+   
+
+  
+
 }
 
 catch (Exception ex)

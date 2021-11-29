@@ -7,7 +7,7 @@ using PolygonPerimetr;
 
 namespace PolygonPerimetr
 {
-    internal class Polygon
+    public class Polygon
     {
         // для  хранения точек при создании экземпляра(стартовое знач Capacity3)
         private List<Point> polygonPoints = new List<Point>(3);
