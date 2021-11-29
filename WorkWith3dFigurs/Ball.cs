@@ -1,15 +1,17 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace WorkWith3dFigures
+﻿namespace WorkWith3dFigures
 {
-    public abstract class Shape
+    public class Ball : Shape
     {
-        public abstract double Volume();
-        protected const double Pi = 3.1415;
+        public double R { get; }
+        public Ball(double radius)
+        {
+            R = radius;
+        }
+        public override double Volume()
+        {
+            double volume = 4 / 3 * Pi * Math.Pow(R, 3);
+            return Math.Round(volume, 2);
+        }
     }
 }
 
