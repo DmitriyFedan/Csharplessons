@@ -11,37 +11,21 @@ namespace CounterWithEvents
 
         public delegate void MyDelegate(); 
         public event MyDelegate MyEvent;
-        public int num { get; init; } //  будем записывать сюда искомое число при сосздании
+        public int Num { get; init; } //  будем записывать сюда искомое число при сосздании
         public Counter(int numberForEvent)
         { 
-            num = numberForEvent;
+            Num = numberForEvent;
         }
         public void Count()
         {
             for (int i = 0; i <= 100; i++)
             {
-                if (i == num)
+                if (i == Num)
                 {
                     MyEvent?.Invoke();
                 }
             }
         }    
-    }
-
-    class Handler1
-    {
-        public void GetMessage()
-        {
-            Console.WriteLine("пора действовать ведь уже 77");
-        }
-    }
-
-    class Handler2
-    {
-        public void GetMessage()
-        {
-            Console.WriteLine("уже 77 давно пора было начать");
-        }
     }
 
 }
