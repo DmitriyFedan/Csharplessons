@@ -22,6 +22,9 @@ try
     static void Handler(string inputstring)
     {
         Console.WriteLine($"Результаты поиска: {inputstring}");
+        //searcher.MyEvent -= Handler; не совсем понял что значит
+        //возможность отмены дальнейшей генерации событий в обработчике
+        // но похоже это должно происходить здесь
     }
 }
 catch (Exception ex)
