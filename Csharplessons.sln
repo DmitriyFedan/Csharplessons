@@ -21,7 +21,9 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolygonPerimetr.test", "Pol
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CounterWithEvents", "CounterWithEvents\CounterWithEvents.csproj", "{8432E8B0-F295-4C6D-8B2B-7D06B925EA3E}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchInString", "StringSearcher\SearchInString.csproj", "{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchInString", "StringSearcher\SearchInString.csproj", "{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong", "PingPong\PingPong.csproj", "{C4E1C303-4693-4652-BF7B-22CF529F7337}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -69,6 +71,10 @@ Global
 		{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}.Release|Any CPU.Build.0 = Release|Any CPU
+		{C4E1C303-4693-4652-BF7B-22CF529F7337}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{C4E1C303-4693-4652-BF7B-22CF529F7337}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{C4E1C303-4693-4652-BF7B-22CF529F7337}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{C4E1C303-4693-4652-BF7B-22CF529F7337}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
