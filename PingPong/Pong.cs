@@ -4,15 +4,16 @@ public class Pong
     //Action<> Mydelegate;
     public delegate void pongDelegate();
     public event pongDelegate PongEvent;
+    private Random _random = new Random();
 
     public void Play()
     {
-        int magicnumber = new Random().Next(1, 10);
+        int magicnumber = _random.Next(1, 10); 
         if (magicnumber != 5)
         {
-            System.Threading.Thread.Sleep(1000);
+            System.Threading.Thread.Sleep(500);
             Console.WriteLine("Pong получил Ping");
-            PongEvent();
+            PongEvent?.Invoke();
         }
         else Console.WriteLine("Ping победил");
 
