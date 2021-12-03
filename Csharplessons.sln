@@ -17,9 +17,11 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWith3dFigures", "WorkWi
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "WorkWith3dFigure.test", "WorkWith3dFigure.test\WorkWith3dFigure.test.csproj", "{8E917769-F376-4259-9470-7603A1D1FC80}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PolygonPerimetr.test", "PolygonPerimetr.test\PolygonPerimetr.test.csproj", "{FC5E807D-5333-40B4-9744-64FF064BCEAA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "PolygonPerimetr.test", "PolygonPerimetr.test\PolygonPerimetr.test.csproj", "{FC5E807D-5333-40B4-9744-64FF064BCEAA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "CounterWithEvents", "CounterWithEvents\CounterWithEvents.csproj", "{8432E8B0-F295-4C6D-8B2B-7D06B925EA3E}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "CounterWithEvents", "CounterWithEvents\CounterWithEvents.csproj", "{8432E8B0-F295-4C6D-8B2B-7D06B925EA3E}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SearchInString", "StringSearcher\SearchInString.csproj", "{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -63,6 +65,10 @@ Global
 		{8432E8B0-F295-4C6D-8B2B-7D06B925EA3E}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{8432E8B0-F295-4C6D-8B2B-7D06B925EA3E}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{8432E8B0-F295-4C6D-8B2B-7D06B925EA3E}.Release|Any CPU.Build.0 = Release|Any CPU
+		{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{83ACC6D0-3230-4A13-A9DC-E0C485618BA7}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
