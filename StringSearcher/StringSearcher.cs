@@ -34,7 +34,7 @@ namespace SearchInString
                     }
                 }               
             }
-            if (!flag) MyEvent("Совпадений не найдено");
+            if (!flag) MyEvent?.Invoke("Совпадений не найдено");
         }
     }
 }
