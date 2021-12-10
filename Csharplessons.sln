@@ -25,6 +25,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "SearchInString", "StringSea
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong", "PingPong\PingPong.csproj", "{C4E1C303-4693-4652-BF7B-22CF529F7337}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalData_1", "LocalData_1\LocalData_1.csproj", "{157497BA-C582-4139-B6B0-3DF87100EF09}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -75,6 +77,10 @@ Global
 		{C4E1C303-4693-4652-BF7B-22CF529F7337}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{C4E1C303-4693-4652-BF7B-22CF529F7337}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{C4E1C303-4693-4652-BF7B-22CF529F7337}.Release|Any CPU.Build.0 = Release|Any CPU
+		{157497BA-C582-4139-B6B0-3DF87100EF09}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{157497BA-C582-4139-B6B0-3DF87100EF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{157497BA-C582-4139-B6B0-3DF87100EF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{157497BA-C582-4139-B6B0-3DF87100EF09}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
