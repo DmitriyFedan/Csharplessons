@@ -39,8 +39,8 @@ if (File.Exists(zipFullPath))
         foreach (var item in dirinfo.GetFiles())
         {
             //Console.WriteLine(item.Name);
-            
-            string  writablevalue = $"Файл: {item.Name},  дата измениния: {File.GetLastWriteTime(item.FullName)}";
+            // формируем то то что нужно записывать
+            string writablevalue = $"Файл: {item.Name},  дата измениния: {File.GetLastWriteTime(item.FullName)}";
             FileWriteInfo(infoFilePath, writablevalue);
         }
         Directory.Delete(pathFinalyDir,true);

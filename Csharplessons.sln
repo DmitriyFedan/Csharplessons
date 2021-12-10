@@ -27,6 +27,8 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PingPong", "PingPong\PingPo
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalData_1", "LocalData_1\LocalData_1.csproj", "{157497BA-C582-4139-B6B0-3DF87100EF09}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LocalData_2", "LocalData_2\LocalData_2.csproj", "{ABEA2F11-B131-4202-AEE6-DAA41C4BC731}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -81,6 +83,10 @@ Global
 		{157497BA-C582-4139-B6B0-3DF87100EF09}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{157497BA-C582-4139-B6B0-3DF87100EF09}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{157497BA-C582-4139-B6B0-3DF87100EF09}.Release|Any CPU.Build.0 = Release|Any CPU
+		{ABEA2F11-B131-4202-AEE6-DAA41C4BC731}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{ABEA2F11-B131-4202-AEE6-DAA41C4BC731}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{ABEA2F11-B131-4202-AEE6-DAA41C4BC731}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{ABEA2F11-B131-4202-AEE6-DAA41C4BC731}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
