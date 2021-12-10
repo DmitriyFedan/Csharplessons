@@ -45,6 +45,7 @@ try
     if (File.Exists(readableFilePath))
     { 
         File.Delete(readableFilePath);
+        //Console.WriteLine("файл удален");
     }
     else
     {
@@ -62,8 +63,12 @@ static void  ShowFileContentWithDateSort (string filePath)
     {
         using (StreamReader st = new StreamReader(filePath, System.Text.Encoding.Default))
         {
-            string readablevalue = st.ReadLine();
-            Console.WriteLine(readablevalue);
+            string line;
+            while ((line = st.ReadLine()) != null)
+            {
+                Console.WriteLine(line);
+            }
+            
             /// пока не придумал как отсортировать по дате изменения (ведь это не директория а просто строки)
         }
     }
