@@ -16,8 +16,10 @@ try
         {
             string readablevalue = Path.Combine(st.ReadLine());
             //string readablevalue = Path.Combine(st.ReadToEnd());
+            //string readablevalue = st.ReadToEnd();
+            //string readablevalue = st.ReadLine();
             //Console.WriteLine(readablevalue);
-            //string st1 = Path.Combine(@"G:\WORKED\C# projects\Csharplessons\LocalData_1", "InfoFile.csv");   //   существующий путь
+            string st1 = Path.Combine(@"G:\WORKED\C# projects\Csharplessons\LocalData_1", "InfoFile.csv");   //   существующий путь
             //string st2 = readablevalue;  // то что считали
             //Console.WriteLine(st1 == st2);   // они абсолютно одинаковые но возвращает False
             //Console.WriteLine(st1.Equals(st2));
@@ -27,7 +29,7 @@ try
             //if (File.Exists(readablevalue))   // перепроверить почему это перестало работать 
             if (File.Exists(Path.Combine(@"G:\WORKED\C# projects\Csharplessons\LocalData_1", "InfoFile.csv")))
 
-                finalyPath = readablevalue;
+                finalyPath = st1; // вставил временно(если вы это увидели то на данный момент проблему решить мне не удалось)
             else
                 Console.WriteLine($"Файл по считанному пути{readablevalue} не существует");
             //Console.WriteLine(finalyPath);
@@ -38,6 +40,15 @@ try
     {
         //Console.WriteLine(finalyPath);
         ShowFileContentWithDateSort(finalyPath);
+    }
+
+    if (File.Exists(readableFilePath))
+    { 
+        File.Delete(readableFilePath);
+    }
+    else
+    {
+        Console.WriteLine($"Файл {readableFilePath}, не найден или удален ранее");
     }
 
 }
@@ -53,6 +64,7 @@ static void  ShowFileContentWithDateSort (string filePath)
         {
             string readablevalue = st.ReadLine();
             Console.WriteLine(readablevalue);
+            /// пока не придумал как отсортировать по дате изменения (ведь это не директория а просто строки)
         }
     }
     else Console.WriteLine($"Не удалось найти файл {filePath}");
