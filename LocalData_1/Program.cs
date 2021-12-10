@@ -1,16 +1,18 @@
 ﻿using System.IO;
 using System.IO.Compression;
 
+
 string dirPath = @"G:\WORKED\C# projects\Csharplessons\LocalData_1";
-string fileName = "Homework12.zip";
-string zipFullPath = Path.Combine(dirPath, fileName);
+string zipName = "Homework12.zip";
+//  формируем путь к архиву пробуя Path
+string zipFullPath = Path.Combine(dirPath, zipName);
 
 string pathExtract = dirPath;
 
-
+//  путь файла для записи информации
 string infoFileName = "InfoFile.csv";
 string infoFilePath = Path.Combine(dirPath, infoFileName);
-
+// путь файла для записи пути к файлу в который записывали информацию
 string fileWithPathFor_infoFilename = Path.Combine(dirPath, "Lesson12Homework.txt");
 
 if (File.Exists(zipFullPath))
@@ -30,25 +32,26 @@ if (File.Exists(zipFullPath))
         foreach (var item in dirinfo.GetDirectories())
         {
             //Console.WriteLine(item.Name);
-            FileWriteInfo(infoFilePath, item.Name); //Console.WriteLine()
-            
+            // формируем то то что нужно записывать
+            string writablevalue = $"Папка: {item.Name},  дата изменения: {Directory.GetLastWriteTime(item.FullName)}";
+            FileWriteInfo(infoFilePath, writablevalue); 
         }
         foreach (var item in dirinfo.GetFiles())
         {
             //Console.WriteLine(item.Name);
-            FileWriteInfo(infoFilePath, item.Name);
+            
+            string  writablevalue = $"Файл: {item.Name},  дата измениния: {File.GetLastWriteTime(item.FullName)}";
+            FileWriteInfo(infoFilePath, writablevalue);
         }
         Directory.Delete(pathFinalyDir,true);
+        FileWriteInfo(fileWithPathFor_infoFilename, infoFilePath);
         
     }
 
-    static void FileWriteInfo(string path, string info)
+    static void FileWriteInfo(string path, string writableValue)
     {
         using (StreamWriter sw = new StreamWriter(path, true, System.Text.Encoding.Default))
-            sw.WriteLine($"{info}\t");
+            sw.WriteLine($"{writableValue}\t");
     }
-
-    
-
 
 }

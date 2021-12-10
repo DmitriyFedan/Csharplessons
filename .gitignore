@@ -361,3 +361,6 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
+/LocalData_1/InfoFile.csv
+/LocalData_1/Lesson12Homework.txt
+/LocalData_1/.txt
